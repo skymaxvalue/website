@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^skyhighvaluellc\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.skyhighvaluellc\.com$
+RewriteRule ^etc\/skyhighvaluellc\.com\/index\.html$ "http\:\/\/skyhighvaluellc\.com\/" [R=301,L]
+
