@@ -2206,3 +2206,16 @@ a {
         max-height: 42px;
     }
 }
+
+
+.disabled-link {
+  cursor: default;
+}
+
+.disabled-link::after {
+  display: none !important;
+}
+
+.disabled-link:hover {
+  color: rgba(255,255,255,0.96) !important;
+}
