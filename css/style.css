@@ -413,7 +413,7 @@ a {
   width: min(100%, 760px);
   height: auto;
   filter:
-    drop-shadow(0 18px 34px rgba(0, 0, 0, 0.28));
+    
 }
 
 
@@ -891,9 +891,8 @@ a {
   width: 100%;
   max-width: 36rem;
   height: auto;
-  filter:
-    drop-shadow(0 26px 60px rgba(0, 0, 0, 0.36))
-    drop-shadow(0 0 32px rgba(64, 95, 255, 0.16));
+
+
 }
 
 .service-metrics {
@@ -2218,4 +2217,38 @@ a {
 
 .disabled-link:hover {
   color: rgba(255,255,255,0.96) !important;
+}
+
+/* =========================================
+ACTIVE NAVIGATION SYSTEM
+========================================= */
+
+/* HOME */
+.home-page .home-link {
+  color: var(--gold);
+}
+
+.home-page .home-link::after {
+  background: var(--gold);
+  transform: scaleX(1);
+}
+
+/* PRODUCTS */
+.products-page .products-link {
+  color: var(--gold);
+}
+
+.products-page .products-link::after {
+  background: var(--gold);
+  transform: scaleX(1);
+}
+
+/* SERVICES */
+.services-page .services-link {
+  color: var(--gold);
+}
+
+.services-page .services-link::after {
+  background: var(--gold);
+  transform: scaleX(1);
 }
