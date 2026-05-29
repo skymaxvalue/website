@@ -5,6 +5,7 @@
   overflow: hidden;
   padding-top: 135px;
   padding-bottom: 90px;
+  
 }
 
 .products-hero__overlay {
@@ -35,6 +36,7 @@
   line-height: .94;
   font-weight: 800;
   letter-spacing: -4px;
+  
 
   margin-bottom: 26px;
 
@@ -68,9 +70,7 @@
 .products-hero__visual img {
   width: 100%;
   max-width: 760px;
-}
 
-/* PRODUCTS GRID */
 
 .products-showcase {
   padding-bottom: 90px;
@@ -95,9 +95,7 @@
 }
 
 
-/* =========================================
-PRODUCT CARD PERFECT MATCH
-========================================= */
+
 
 .product-showcase-card {
   position: relative;
@@ -131,7 +129,7 @@ PRODUCT CARD PERFECT MATCH
     box-shadow .3s ease;
 }
 
-/* LEFT */
+
 
 .product-showcase-card__content {
   width: 50%;
@@ -141,7 +139,7 @@ PRODUCT CARD PERFECT MATCH
   align-items: flex-start;
 }
 
-/* ICON */
+
 
 .product-showcase-card__icon {
   width: 56px;
@@ -169,7 +167,7 @@ PRODUCT CARD PERFECT MATCH
   width: 40px;
 }
 
-/* TITLE */
+
 
 .product-showcase-card h3 {
   color: #19d861;
@@ -181,7 +179,7 @@ PRODUCT CARD PERFECT MATCH
   margin-bottom: 8px;
 }
 
-/* SUBTITLE */
+
 
 .product-showcase-card h4 {
   color: #fff;
@@ -193,7 +191,7 @@ PRODUCT CARD PERFECT MATCH
   margin-bottom: 16px;
 }
 
-/* DESCRIPTION */
+
 
 .product-showcase-card p {
   color: rgba(255,255,255,.82);
@@ -204,7 +202,7 @@ PRODUCT CARD PERFECT MATCH
   margin-bottom: 18px;
 }
 
-/* LIST */
+
 
 .product-showcase-card ul {
   list-style: none;
@@ -238,7 +236,7 @@ PRODUCT CARD PERFECT MATCH
   font-weight: 700;
 }
 
-/* BUTTON */
+
 
 .product-showcase-card__btn {
   height: 34px;
@@ -261,7 +259,7 @@ PRODUCT CARD PERFECT MATCH
   text-decoration: none;
 }
 
-/* IMAGE SIDE */
+
 
 .product-showcase-card__image {
   width: 54%;
@@ -273,7 +271,7 @@ PRODUCT CARD PERFECT MATCH
   height: 100%;
 }
 
-/* IMAGE */
+
 
 .product-showcase-card__image img {
   width: 100%;
@@ -282,7 +280,7 @@ PRODUCT CARD PERFECT MATCH
   object-fit: contain;
 }
 
-/* HOVER */
+
 
 .product-showcase-card:hover {
   transform: translateY(-4px);
@@ -293,7 +291,6 @@ PRODUCT CARD PERFECT MATCH
     0 20px 45px rgba(0,0,0,.34);
 }
 
-/* RESPONSIVE */
 
 @media(max-width:991px){
 
@@ -318,7 +315,7 @@ PRODUCT CARD PERFECT MATCH
 
 
 
-/* FEATURE STRIP */
+
 
 .products-feature-strip {
   padding-bottom: 100px;
@@ -394,7 +391,7 @@ PRODUCT CARD PERFECT MATCH
   line-height: 1.5;
 }
 
-/* RESPONSIVE */
+
 
 @media(max-width:1400px){
 

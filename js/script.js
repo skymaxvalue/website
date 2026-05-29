@@ -54,13 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Services page scripts
+// Services 
 
-
-/* =========================
-OPTIONAL ADDITIONS
-APPEND INTO script.js
-========================= */
 
 document.querySelectorAll(".service-glass-card").forEach((card) => {
 

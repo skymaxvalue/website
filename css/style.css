@@ -1275,15 +1275,27 @@ a {
 }
 
 .footer-links__icon {
-  width: 2.95rem;
-  height: 2.95rem;
-  border-radius: 0.55rem;
+  width: 2.2rem;
+  height: 2.2rem;
+
+  border-radius: 0.45rem;
+
   flex: 0 0 auto;
-  display: grid;
-  place-items: center;
-  color: var(--green);
-  border: 1px solid rgba(35, 224, 111, 0.42);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: rgba(8, 18, 30, 0.78);
+  border: 1px solid rgba(35, 224, 111, 0.32);
+}
+
+.footer-links__icon img {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  object-fit: contain;
+  display: block;
 }
 
 .footer-links__icon svg {
@@ -1448,13 +1460,6 @@ a {
 
 
 
-
-
-
-/* =========================================
-   UNIVERSAL ICON SYSTEM
-========================================= */
-
 .ui-icon {
     width: 3rem;
     height: 3rem;
@@ -1485,7 +1490,7 @@ a {
     display: block;
 }
 
-/* SMALL */
+
 .ui-icon--sm {
     width: 2.5rem;
     height: 2.5rem;
@@ -1979,9 +1984,7 @@ a {
     transform: none;
   }
 }
-/* =========================================
-   RESPONSIVE LOGO
-========================================= */
+
 
 @media (max-width: 991.98px) {
 
@@ -2143,9 +2146,7 @@ a {
     opacity: 1;
 }
 
-/* =========================================
-   TABLET
-========================================= */
+
 
 @media (max-width: 991.98px) {
 
@@ -2219,11 +2220,9 @@ a {
   color: rgba(255,255,255,0.96) !important;
 }
 
-/* =========================================
-ACTIVE NAVIGATION SYSTEM
-========================================= */
 
-/* HOME */
+
+
 .home-page .home-link {
   color: var(--gold);
 }
@@ -2233,7 +2232,6 @@ ACTIVE NAVIGATION SYSTEM
   transform: scaleX(1);
 }
 
-/* PRODUCTS */
 .products-page .products-link {
   color: var(--gold);
 }
@@ -2243,7 +2241,7 @@ ACTIVE NAVIGATION SYSTEM
   transform: scaleX(1);
 }
 
-/* SERVICES */
+
 .services-page .services-link {
   color: var(--gold);
 }

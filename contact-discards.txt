@@ -1,0 +1,174 @@
+
+  <!-- HELP -->
+  <section class="help-section">
+
+    <div class="container-xxl">
+
+      <div class="help-box">
+
+        <h2>
+          How We Can Help You
+        </h2>
+
+        <div class="help-grid">
+
+          <!-- ITEM -->
+          <article class="help-item">
+
+            <img src="images/product-development.png" alt="">
+
+            <h3>Product Development</h3>
+
+            <ul>
+              <li>Full-stack application development</li>
+              <li>UI/UX design</li>
+              <li>MVP development</li>
+              <li>Product optimization</li>
+            </ul>
+
+          </article>
+
+          <!-- ITEM -->
+          <article class="help-item">
+
+            <img src="images/cloud-app.png" alt="">
+
+            <h3>
+              Cloud-Based
+              Application Engineering
+            </h3>
+
+            <ul>
+              <li>Azure & AWS solutions</li>
+              <li>Cloud migration</li>
+              <li>Microservices</li>
+              <li>Serverless architecture</li>
+            </ul>
+
+          </article>
+
+          <!-- ITEM -->
+          <article class="help-item">
+
+            <img src="images/api-engineering.png" alt="">
+
+            <h3>
+              System Integration
+              & API Engineering
+            </h3>
+
+            <ul>
+              <li>API integration</li>
+              <li>Legacy modernization</li>
+              <li>Workflow automation</li>
+              <li>Third-party integrations</li>
+            </ul>
+
+          </article>
+
+          <!-- ITEM -->
+          <article class="help-item">
+
+            <img src="images/consulting.png" alt="">
+
+            <h3>
+              Technology Consulting
+            </h3>
+
+            <ul>
+              <li>Architecture assessments</li>
+              <li>Cloud strategy</li>
+              <li>Technical advisory</li>
+              <li>Security & scalability reviews</li>
+            </ul>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="contact-industries">
+
+    <div class="container-xxl">
+
+      <h2 class="contact-title">
+        Industries We Serve
+      </h2>
+
+      <div class="contact-industries__grid">
+
+        <article>
+          <img src="images/healthcare-icon.png" alt="">
+          <span>Healthcare</span>
+        </article>
+
+        <article>
+          <img src="images/hoa-icon.png" alt="">
+          <span>HOA & Property Management</span>
+        </article>
+
+        <article>
+          <img src="images/enterprise.png" alt="">
+          <span>Enterprise Services</span>
+        </article>
+
+        <article>
+          <img src="images/vendor-icon.png" alt="">
+          <span>Vendor Operations</span>
+        </article>
+
+        <article>
+          <img src="images/workforce-icon.png" alt="">
+          <span>Workforce & Billing Systems</span>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GLOBAL -->
+  <section class="global-delivery">
+
+    <div class="container-xxl">
+
+      <div class="global-delivery__box">
+
+        <div class="global-delivery__content">
+
+          <img src="images/global.png" alt="">
+
+          <div>
+
+            <h2>
+              Global Delivery Model
+            </h2>
+
+            <p>
+              We operate across the USA and India,
+              ensuring faster turnaround, cost-effective
+              delivery, and 24/7 collaboration.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="global-delivery__map">
+
+          <img src="images/global-map-small.png" alt="">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
