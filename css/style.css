@@ -276,10 +276,7 @@ a {
 .hero-slide__veil {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 73% 24%, var(--slide-glow) 0, transparent 20%),
-    radial-gradient(circle at 73% 58%, var(--slide-glow-2) 0, transparent 28%),
-    linear-gradient(180deg, rgba(2, 6, 16, 0.72), rgba(2, 6, 16, 0.94));
+  background: transparent;
   pointer-events: none;
 }
 

@@ -11,8 +11,11 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
@@ -213,7 +216,11 @@
             </div>
 
             <div class="form-group">
-              <input type="text" name="phone" placeholder="Phone Number">
+              <input type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                pattern="[0-9]{10,15}"
+                title="Enter a valid phone number">
             </div>
 
             <div class="form-group">
@@ -221,7 +228,9 @@
               <select name="service" required>
 
 
-                <option>Inquiry Type *</option>
+                <option value="" disabled selected>
+                    Inquiry Type *
+                  </option>
                 <option>Product Development</option>
                 <option>Cloud Engineering</option>
                 <option>System Integration</option>
@@ -234,6 +243,15 @@
             <div class="form-group">
               <textarea name="message"  placeholder="Your Message *"  required></textarea>
             </div>
+
+
+            <div class="g-recaptcha"
+            data-sitekey="6LfjWwotAAAAAFEtYPyCRxYV9I5y5jwd_fvDyiVE">
+        </div>
+
+       <br>
+       
+    
 
             <button type="submit">
               Send Message
@@ -273,7 +291,7 @@
 
 <script>
 
-  emailjs.init("YOUR_PUBLIC_KEY");
+  emailjs.init("uvzhMbCYURkVgayve");
 
   const form =
     document.getElementById("contactForm");
@@ -281,44 +299,61 @@
   const status =
     document.querySelector(".form-status");
 
-  form.addEventListener(
-    "submit",
-    function(e){
+  form.addEventListener("submit", function(e) {
 
-      e.preventDefault();
+  e.preventDefault();
 
-      status.innerHTML = "Sending...";
+  const captchaResponse =
+    grecaptcha.getResponse();
 
-      emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        this
-      )
+  if (!captchaResponse) {
 
-      .then(() => {
+    status.innerHTML =
+      "Please complete the reCAPTCHA.";
 
-        status.innerHTML =
-          "Message sent successfully.";
+    status.style.color = "#ff4d4d";
 
-        status.style.color =
-          "#1fd85f";
+    return;
+  }
 
-        form.reset();
+  status.innerHTML = "Sending...";
 
-      })
+  emailjs.sendForm(
+    "service_dntg08k",
+    "template_hv9a1rq",
+    this
+  )
 
-      .catch(() => {
+  .then(() => {
 
-        status.innerHTML =
-          "Unable to send message.";
+    status.innerHTML =
+      "Message sent successfully.";
 
-        status.style.color =
-          "#ff4d4d";
+    status.style.color =
+      "#1fd85f";
 
-      });
+    form.reset();
 
-    }
-  );
+    grecaptcha.reset();
+
+  })
+
+.catch((error) => {
+
+  console.log("STATUS:", error.status);
+  console.log("TEXT:", error.text);
+  console.log("FULL:", JSON.stringify(error));
+
+  status.innerHTML = "Unable to send message.";
+  status.style.color = "#ff4d4d";
+
+});
+
+});
+
+
+
+  
 
 </script>
 
